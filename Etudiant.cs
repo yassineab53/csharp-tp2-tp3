@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Tp2
 {
-    [Serializable]
+
     public class Etudiant : Personne
     {
         public string Filiere { get; set; }
         public float[] Notes { get; set; }
 
-        // Constructeur par défaut
+       
         public Etudiant()
         {
             Numero = 0;
@@ -22,7 +22,6 @@ namespace Tp2
             Notes = new float[0];
         }
 
-        // Constructeur avec paramètres pour numéro, nom et prénom
         public Etudiant(int numero, string nom, string prenom)
         {
             Numero = numero;
