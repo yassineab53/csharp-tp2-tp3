@@ -26,10 +26,10 @@ namespace
             informatique.AddEtudiant(etudiant1);
             informatique.AddEtudiant(etudiant2);
 
-            // Affichage de la liste des étudiants
+            
             informatique.AfficherListeEtudiants();
 
-            // Recherche d'un étudiant
+            
             var cherche = informatique.Chercher("Durand", "Marie");
             if (cherche != null)
             {
@@ -40,16 +40,16 @@ namespace
                 Console.WriteLine("Étudiant non trouvé.");
             }
 
-            // Suppression d'un étudiant
+           
             bool supprime = informatique.DeleteEtudiant("Durand", "Marie");
             Console.WriteLine(supprime
                 ? "Étudiant supprimé avec succès."
                 : "Étudiant non trouvé pour suppression.");
 
-            // Affichage de la liste après suppression
+            
             informatique.AfficherListeEtudiants();
 
-            // Nombre d'étudiants dans la filière
+            
             Console.WriteLine($"Nombre d'étudiants dans la filière {informatique.NomFil}: {informatique.GetNbrEtudiants()}");
             Console.ReadLine();
         }
@@ -58,7 +58,7 @@ namespace
         //main pour ex2
         /*static void Main(string[] args)
         {
-            // Utilisation du constructeur par défaut
+            
             Etudiant etudiant1 = new Etudiant();
             etudiant1.Numero = 1;
             etudiant1.Nom = "Dupont";
@@ -66,12 +66,12 @@ namespace
             etudiant1.Filiere = "Mathématiques";
             etudiant1.Notes = new float[] { 14.5f, 16.0f, 12.0f, 15.0f, 18.0f };
 
-            // Utilisation du constructeur avec paramètres
+            
             Etudiant etudiant2 = new Etudiant(2, "Durand", "Marie");
             etudiant2.Filiere = "Informatique";
             etudiant2.Notes = new float[] { 13.0f, 14.0f, 15.5f, 17.0f, 16.0f };
 
-            // Affichage des informations des étudiants
+            
             Console.WriteLine(etudiant1);
             Console.WriteLine(etudiant2);
 
