@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace 
+namespace Tp2
 {
     // tp2
     /*class Program
@@ -159,8 +159,19 @@ namespace
                 }
             }
 
-            public stativ void Main(string[] args)
+            public static void Main(string[] args)
             {
+                try
+                {
+                    int position = Rechercher(tableau, 15);
+                    Console.WriteLine("Position trouvée : " + position);
+                }
+                catch (NoSuchElementException e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+
+                Console.ReadLine();
 
             }
         }
