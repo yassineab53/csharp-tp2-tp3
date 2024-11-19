@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tp2
 {
+    [Serializable]
     public class Etudiant : Personne
     {
         public string Filiere { get; set; }
