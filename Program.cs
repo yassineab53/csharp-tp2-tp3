@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tp2
+namespace 
 {
     // tp2
     /*class Program
@@ -12,10 +12,8 @@ namespace Tp2
         //main pour ex3
         static void Main(string[] args)
         {
-            // Création de la filière Informatique
             Filiere informatique = new Filiere { NomFil = "Informatique" };
 
-            // Création de quelques étudiants
             Etudiant etudiant1 = new Etudiant(1, "Dupont", "Jean");
             etudiant1.Filiere = "Informatique";
             etudiant1.Notes = new float[] { 14.5f, 15.0f, 16.0f };
@@ -24,7 +22,7 @@ namespace Tp2
             etudiant2.Filiere = "Informatique";
             etudiant2.Notes = new float[] { 13.0f, 14.0f, 15.0f };
 
-            // Ajout des étudiants à la filière
+            
             informatique.AddEtudiant(etudiant1);
             informatique.AddEtudiant(etudiant2);
 
@@ -134,9 +132,15 @@ namespace Tp2
             return tableau[indice] / diviseur;
         }
 
+        public class NoSuchElementException : Exception
+        {
+            public NoSuchElementException(string message) : base(message) { }
+        }
+
+
         static void Main(string[] args)
         {
-            try
+            /*try
             {
                 int x, y;
 
@@ -168,7 +172,7 @@ namespace Tp2
             catch (Exception ex)
             {
                 Console.WriteLine($"Erreur inattendue : {ex.Message}");
-            }
+            }*/
 
             Console.ReadLine();
         }
