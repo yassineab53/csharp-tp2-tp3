@@ -138,8 +138,37 @@ namespace
             public NoSuchElementException(string message) : base(message) { }
         }
 
+        public class RechercheEntier
+        {
+            public static int Rechercher(int[] tableau, int cible)
+            {
+                try
+                {
+                    for (int i = 0; i < tableau.Length; i++)
+                    {
+                        if (tableau[i] == cible)
+                        {
+                            return i;
+                        }
+                    }
+                    throw new NoSuchElementException("Element non trouve dans le tableau.");
+                }
+                finally
+                {
+                    Console.WriteLine("Au revoir !");
+                }
+            }
 
-        static void Main(string[] args)
+            public stativ void Main(string[] args)
+            {
+
+            }
+        }
+
+
+
+
+        /* static void Main(string[] args)
         {
             /*try
             {
@@ -175,10 +204,10 @@ namespace
             catch (Exception ex)
             {
                 Console.WriteLine($"Erreur inattendue : {ex.Message}");
-            }*/
+            }
 
             Console.ReadLine();
-        }
+        }*/
     }
  }
 
