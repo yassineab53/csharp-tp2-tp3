@@ -153,10 +153,12 @@ namespace
                 Console.WriteLine("Le résultat de la division est: ");
                 Console.WriteLine(division(x, y));
             }
+            
             catch (IndexOutOfRangeException)
             {
                 Console.WriteLine("Erreur : L'indice est en dehors des limites du tableau.");
             }
+            
             catch (DivideByZeroException)
             {
                 Console.WriteLine("Erreur : Division par zéro non permise.");
@@ -176,9 +178,6 @@ namespace
 
             Console.ReadLine();
         }
-
-        
-
     }
  }
 
