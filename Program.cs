@@ -132,6 +132,7 @@ namespace
             return tableau[indice] / diviseur;
         }
 
+        //add a personilize Exception NoSuchElementException
         public class NoSuchElementException : Exception
         {
             public NoSuchElementException(string message) : base(message) { }
