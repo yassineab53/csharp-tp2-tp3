@@ -81,10 +81,10 @@ namespace
         //main pour ex1
         /*static void Main(string[] args)
         {
-            // Créer un tableau de 5 étudiants
+            
             Etudiant[] etudiants = new Etudiant[5];
 
-            // Renseigner les informations des étudiants
+            
             for (int i = 0; i < etudiants.Length; i++)
             {
                 etudiants[i] = new Etudiant
@@ -97,7 +97,7 @@ namespace
                 };
             }
 
-            // Afficher les informations de chaque étudiant
+           
             foreach (var etudiant in etudiants)
             {
                 Console.WriteLine(etudiant);
@@ -107,14 +107,14 @@ namespace
         }
 
 
-        // Méthode pour générer un tableau de notes aléatoires
+        
         static float[] GenererNotesAleatoires(int nombreNotes)
         {
             Random random = new Random();
             float[] notes = new float[nombreNotes];
             for (int i = 0; i < nombreNotes; i++)
             {
-                notes[i] = (float)Math.Round(random.NextDouble() * 20, 2); // Notes entre 0 et 20
+                notes[i] = (float)Math.Round(random.NextDouble() * 20, 2); 
             }
             return notes;
         } */
